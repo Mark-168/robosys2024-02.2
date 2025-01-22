@@ -1,0 +1,2 @@
+uint8 light
+uint8 color

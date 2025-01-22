@@ -1,0 +1,38 @@
+[1.362s] Invoking command in '/home/koara/ros2_ws/src/mypkg': PYTHONPATH=/home/koara/ros2_ws/src/mypkg/build/mypkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/koara/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/mypkg build --build-base /home/koara/ros2_ws/src/mypkg/build/mypkg/build install --record /home/koara/ros2_ws/src/mypkg/build/mypkg/install.log --install-scripts $base/lib/mypkg --single-version-externally-managed install_data
+[1.546s] running egg_info
+[1.547s] creating build/mypkg/mypkg.egg-info
+[1.547s] writing build/mypkg/mypkg.egg-info/PKG-INFO
+[1.548s] writing dependency_links to build/mypkg/mypkg.egg-info/dependency_links.txt
+[1.548s] writing entry points to build/mypkg/mypkg.egg-info/entry_points.txt
+[1.548s] writing requirements to build/mypkg/mypkg.egg-info/requires.txt
+[1.549s] writing top-level names to build/mypkg/mypkg.egg-info/top_level.txt
+[1.553s] writing manifest file 'build/mypkg/mypkg.egg-info/SOURCES.txt'
+[1.584s] reading manifest file 'build/mypkg/mypkg.egg-info/SOURCES.txt'
+[1.586s] writing manifest file 'build/mypkg/mypkg.egg-info/SOURCES.txt'
+[1.586s] running build
+[1.587s] running build_py
+[1.587s] creating /home/koara/ros2_ws/src/mypkg/build/mypkg/build
+[1.587s] creating /home/koara/ros2_ws/src/mypkg/build/mypkg/build/lib
+[1.587s] creating /home/koara/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg
+[1.589s] copying mypkg/talker.py -> /home/koara/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg
+[1.590s] copying mypkg/__init__.py -> /home/koara/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg
+[1.590s] running install
+[1.591s] running install_lib
+[1.592s] creating /home/koara/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg
+[1.593s] copying /home/koara/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg/talker.py -> /home/koara/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg
+[1.593s] copying /home/koara/ros2_ws/src/mypkg/build/mypkg/build/lib/mypkg/__init__.py -> /home/koara/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg
+[1.594s] byte-compiling /home/koara/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg/talker.py to talker.cpython-38.pyc
+[1.597s] byte-compiling /home/koara/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg/__init__.py to __init__.cpython-38.pyc
+[1.597s] running install_data
+[1.597s] creating /home/koara/ros2_ws/src/mypkg/install/mypkg/share/ament_index
+[1.598s] creating /home/koara/ros2_ws/src/mypkg/install/mypkg/share/ament_index/resource_index
+[1.599s] creating /home/koara/ros2_ws/src/mypkg/install/mypkg/share/ament_index/resource_index/packages
+[1.602s] copying resource/mypkg -> /home/koara/ros2_ws/src/mypkg/install/mypkg/share/ament_index/resource_index/packages
+[1.602s] copying package.xml -> /home/koara/ros2_ws/src/mypkg/install/mypkg/share/mypkg
+[1.602s] copying launch/talk_listen.launch.py -> /home/koara/ros2_ws/src/mypkg/install/mypkg/share/mypkg
+[1.602s] running install_egg_info
+[1.604s] Copying build/mypkg/mypkg.egg-info to /home/koara/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages/mypkg-0.0.0-py3.8.egg-info
+[1.610s] running install_scripts
+[1.629s] Installing talker script to /home/koara/ros2_ws/src/mypkg/install/mypkg/lib/mypkg
+[1.633s] writing list of installed files to '/home/koara/ros2_ws/src/mypkg/build/mypkg/install.log'
+[1.661s] Invoked command in '/home/koara/ros2_ws/src/mypkg' returned '0': PYTHONPATH=/home/koara/ros2_ws/src/mypkg/build/mypkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/koara/ros2_ws/src/mypkg/install/mypkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/mypkg build --build-base /home/koara/ros2_ws/src/mypkg/build/mypkg/build install --record /home/koara/ros2_ws/src/mypkg/build/mypkg/install.log --install-scripts $base/lib/mypkg --single-version-externally-managed install_data

@@ -1,0 +1,42 @@
+[0.522s] Invoking command in '/home/koara/robosys2024-4/ros2_ws/src/mypkg': PYTHONPATH=/home/koara/robosys2024-4/ros2_ws/src/build/mypkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/koara/robosys2024-4/ros2_ws/src/install/mypkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/mypkg build --build-base /home/koara/robosys2024-4/ros2_ws/src/build/mypkg/build install --record /home/koara/robosys2024-4/ros2_ws/src/build/mypkg/install.log --install-scripts $base/lib/mypkg --single-version-externally-managed install_data
+[0.681s] running egg_info
+[0.681s] creating ../build/mypkg/mypkg.egg-info
+[0.682s] writing ../build/mypkg/mypkg.egg-info/PKG-INFO
+[0.682s] writing dependency_links to ../build/mypkg/mypkg.egg-info/dependency_links.txt
+[0.682s] writing entry points to ../build/mypkg/mypkg.egg-info/entry_points.txt
+[0.683s] writing requirements to ../build/mypkg/mypkg.egg-info/requires.txt
+[0.683s] writing top-level names to ../build/mypkg/mypkg.egg-info/top_level.txt
+[0.684s] writing manifest file '../build/mypkg/mypkg.egg-info/SOURCES.txt'
+[0.710s] reading manifest file '../build/mypkg/mypkg.egg-info/SOURCES.txt'
+[0.711s] writing manifest file '../build/mypkg/mypkg.egg-info/SOURCES.txt'
+[0.711s] running build
+[0.711s] running build_py
+[0.711s] creating /home/koara/robosys2024-4/ros2_ws/src/build/mypkg/build
+[0.711s] creating /home/koara/robosys2024-4/ros2_ws/src/build/mypkg/build/lib
+[0.711s] creating /home/koara/robosys2024-4/ros2_ws/src/build/mypkg/build/lib/mypkg
+[0.712s] copying mypkg/talker.py -> /home/koara/robosys2024-4/ros2_ws/src/build/mypkg/build/lib/mypkg
+[0.712s] copying mypkg/__init__.py -> /home/koara/robosys2024-4/ros2_ws/src/build/mypkg/build/lib/mypkg
+[0.712s] copying mypkg/test.py -> /home/koara/robosys2024-4/ros2_ws/src/build/mypkg/build/lib/mypkg
+[0.713s] running install
+[0.713s] running install_lib
+[0.714s] creating /home/koara/robosys2024-4/ros2_ws/src/install/mypkg/lib/python3.8/site-packages/mypkg
+[0.714s] copying /home/koara/robosys2024-4/ros2_ws/src/build/mypkg/build/lib/mypkg/talker.py -> /home/koara/robosys2024-4/ros2_ws/src/install/mypkg/lib/python3.8/site-packages/mypkg
+[0.715s] copying /home/koara/robosys2024-4/ros2_ws/src/build/mypkg/build/lib/mypkg/__init__.py -> /home/koara/robosys2024-4/ros2_ws/src/install/mypkg/lib/python3.8/site-packages/mypkg
+[0.715s] copying /home/koara/robosys2024-4/ros2_ws/src/build/mypkg/build/lib/mypkg/test.py -> /home/koara/robosys2024-4/ros2_ws/src/install/mypkg/lib/python3.8/site-packages/mypkg
+[0.715s] byte-compiling /home/koara/robosys2024-4/ros2_ws/src/install/mypkg/lib/python3.8/site-packages/mypkg/talker.py to talker.cpython-38.pyc
+[0.717s] byte-compiling /home/koara/robosys2024-4/ros2_ws/src/install/mypkg/lib/python3.8/site-packages/mypkg/__init__.py to __init__.cpython-38.pyc
+[0.717s] byte-compiling /home/koara/robosys2024-4/ros2_ws/src/install/mypkg/lib/python3.8/site-packages/mypkg/test.py to test.cpython-38.pyc
+[0.717s] running install_data
+[0.718s] creating /home/koara/robosys2024-4/ros2_ws/src/install/mypkg/share/ament_index
+[0.718s] creating /home/koara/robosys2024-4/ros2_ws/src/install/mypkg/share/ament_index/resource_index
+[0.718s] creating /home/koara/robosys2024-4/ros2_ws/src/install/mypkg/share/ament_index/resource_index/packages
+[0.718s] copying resource/mypkg -> /home/koara/robosys2024-4/ros2_ws/src/install/mypkg/share/ament_index/resource_index/packages
+[0.718s] copying package.xml -> /home/koara/robosys2024-4/ros2_ws/src/install/mypkg/share/mypkg
+[0.718s] copying launch/talk_listen.launch.py -> /home/koara/robosys2024-4/ros2_ws/src/install/mypkg/share/mypkg
+[0.719s] running install_egg_info
+[0.720s] Copying ../build/mypkg/mypkg.egg-info to /home/koara/robosys2024-4/ros2_ws/src/install/mypkg/lib/python3.8/site-packages/mypkg-0.0.0-py3.8.egg-info
+[0.721s] running install_scripts
+[0.736s] Installing listener script to /home/koara/robosys2024-4/ros2_ws/src/install/mypkg/lib/mypkg
+[0.737s] Installing talker script to /home/koara/robosys2024-4/ros2_ws/src/install/mypkg/lib/mypkg
+[0.737s] writing list of installed files to '/home/koara/robosys2024-4/ros2_ws/src/build/mypkg/install.log'
+[0.756s] Invoked command in '/home/koara/robosys2024-4/ros2_ws/src/mypkg' returned '0': PYTHONPATH=/home/koara/robosys2024-4/ros2_ws/src/build/mypkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/koara/robosys2024-4/ros2_ws/src/install/mypkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/mypkg build --build-base /home/koara/robosys2024-4/ros2_ws/src/build/mypkg/build install --record /home/koara/robosys2024-4/ros2_ws/src/build/mypkg/install.log --install-scripts $base/lib/mypkg --single-version-externally-managed install_data

@@ -1,0 +1,22 @@
+[0.586s] Invoking command in '/home/koara/robosys2024-4/ros2_ws/src/mypkg': PYTHONPATH=/home/koara/robosys2024-4/ros2_ws/build/mypkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/koara/robosys2024-4/ros2_ws/install/mypkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/mypkg build --build-base /home/koara/robosys2024-4/ros2_ws/build/mypkg/build install --record /home/koara/robosys2024-4/ros2_ws/build/mypkg/install.log --install-scripts $base/lib/mypkg --single-version-externally-managed install_data
+[0.758s] running egg_info
+[0.758s] writing ../../build/mypkg/mypkg.egg-info/PKG-INFO
+[0.758s] writing dependency_links to ../../build/mypkg/mypkg.egg-info/dependency_links.txt
+[0.759s] writing entry points to ../../build/mypkg/mypkg.egg-info/entry_points.txt
+[0.759s] writing requirements to ../../build/mypkg/mypkg.egg-info/requires.txt
+[0.759s] writing top-level names to ../../build/mypkg/mypkg.egg-info/top_level.txt
+[0.789s] reading manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'
+[0.790s] writing manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'
+[0.790s] running build
+[0.790s] running build_py
+[0.790s] running install
+[0.791s] running install_lib
+[0.792s] running install_data
+[0.792s] running install_egg_info
+[0.793s] removing '/home/koara/robosys2024-4/ros2_ws/install/mypkg/lib/python3.8/site-packages/mypkg-0.0.0-py3.8.egg-info' (and everything under it)
+[0.794s] Copying ../../build/mypkg/mypkg.egg-info to /home/koara/robosys2024-4/ros2_ws/install/mypkg/lib/python3.8/site-packages/mypkg-0.0.0-py3.8.egg-info
+[0.795s] running install_scripts
+[0.808s] Installing listener script to /home/koara/robosys2024-4/ros2_ws/install/mypkg/lib/mypkg
+[0.809s] Installing talker script to /home/koara/robosys2024-4/ros2_ws/install/mypkg/lib/mypkg
+[0.809s] writing list of installed files to '/home/koara/robosys2024-4/ros2_ws/build/mypkg/install.log'
+[0.828s] Invoked command in '/home/koara/robosys2024-4/ros2_ws/src/mypkg' returned '0': PYTHONPATH=/home/koara/robosys2024-4/ros2_ws/build/mypkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/koara/robosys2024-4/ros2_ws/install/mypkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/mypkg build --build-base /home/koara/robosys2024-4/ros2_ws/build/mypkg/build install --record /home/koara/robosys2024-4/ros2_ws/build/mypkg/install.log --install-scripts $base/lib/mypkg --single-version-externally-managed install_data

@@ -1,0 +1,6 @@
+[console_scripts]
+range = mypkg.range:main
+range02 = mypkg.range02:main
+test = mypkg.test:main
+test02 = mypkg.test02:main
+

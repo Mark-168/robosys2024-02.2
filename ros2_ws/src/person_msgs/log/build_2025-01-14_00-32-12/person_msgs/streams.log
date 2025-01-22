@@ -1,0 +1,36 @@
+[0.046s] Invoking command in '/home/koara/ros2_ws/src/person_msgs/build/person_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/koara/ros2_ws/install/mypkg:/opt/ros/foxy /usr/bin/cmake /home/koara/ros2_ws/src/person_msgs -DCMAKE_INSTALL_PREFIX=/home/koara/ros2_ws/src/person_msgs/install/person_msgs
+[0.649s] -- The C compiler identification is GNU 9.4.0
+[0.998s] -- The CXX compiler identification is GNU 9.4.0
+[1.081s] -- Check for working C compiler: /usr/bin/cc
+[1.230s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.232s] -- Detecting C compiler ABI info
+[1.347s] -- Detecting C compiler ABI info - done
+[1.358s] -- Detecting C compile features
+[1.358s] -- Detecting C compile features - done
+[1.362s] -- Check for working CXX compiler: /usr/bin/c++
+[1.485s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.486s] -- Detecting CXX compiler ABI info
+[1.611s] -- Detecting CXX compiler ABI info - done
+[1.622s] -- Detecting CXX compile features
+[1.622s] -- Detecting CXX compile features - done
+[1.637s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.663s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.663s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.870s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.874s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[1.881s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.893s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.770s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[3.453s] -- Found FastRTPS: /opt/ros/foxy/include  
+[4.718s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.757s] CMake Error at /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):
+[4.757s]   rosidl_generate_interfaces() the passed file 'srv/Query.srv' doesn't exist
+[4.757s]   relative to the CMAKE_CURRENT_SOURCE_DIR
+[4.757s]   '/home/koara/ros2_ws/src/person_msgs'
+[4.758s] Call Stack (most recent call first):
+[4.758s]   CMakeLists.txt:27 (rosidl_generate_interfaces)
+[4.758s] 
+[4.758s] 
+[4.758s] -- Configuring incomplete, errors occurred!
+[4.759s] See also "/home/koara/ros2_ws/src/person_msgs/build/person_msgs/CMakeFiles/CMakeOutput.log".
+[4.766s] Invoked command in '/home/koara/ros2_ws/src/person_msgs/build/person_msgs' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/koara/ros2_ws/install/mypkg:/opt/ros/foxy /usr/bin/cmake /home/koara/ros2_ws/src/person_msgs -DCMAKE_INSTALL_PREFIX=/home/koara/ros2_ws/src/person_msgs/install/person_msgs
