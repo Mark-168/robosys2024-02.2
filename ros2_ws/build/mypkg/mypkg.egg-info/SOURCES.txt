@@ -11,9 +11,7 @@ setup.py
 launch/talk_listen.launch.py
 mypkg/__init__.py
 mypkg/range.py
-mypkg/range02.py
 mypkg/test.py
-mypkg/test02.py
 resource/mypkg
 test/test_copyright.py
 test/test_flake8.py

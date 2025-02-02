@@ -37,9 +37,7 @@ struct Person_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->light = 0;
-      this->value = 0;
-      this->color = 0;
+      this->safety = 0;
       this->total = 0;
     }
   }
@@ -50,44 +48,24 @@ struct Person_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->light = 0;
-      this->value = 0;
-      this->color = 0;
+      this->safety = 0;
       this->total = 0;
     }
   }
 
   // field types and members
-  using _light_type =
+  using _safety_type =
     uint8_t;
-  _light_type light;
-  using _value_type =
-    uint8_t;
-  _value_type value;
-  using _color_type =
-    uint8_t;
-  _color_type color;
+  _safety_type safety;
   using _total_type =
     uint8_t;
   _total_type total;
 
   // setters for named parameter idiom
-  Type & set__light(
+  Type & set__safety(
     const uint8_t & _arg)
   {
-    this->light = _arg;
-    return *this;
-  }
-  Type & set__value(
-    const uint8_t & _arg)
-  {
-    this->value = _arg;
-    return *this;
-  }
-  Type & set__color(
-    const uint8_t & _arg)
-  {
-    this->color = _arg;
+    this->safety = _arg;
     return *this;
   }
   Type & set__total(
@@ -139,13 +117,7 @@ struct Person_
   // comparison operators
   bool operator==(const Person_ & other) const
   {
-    if (this->light != other.light) {
-      return false;
-    }
-    if (this->value != other.value) {
-      return false;
-    }
-    if (this->color != other.color) {
+    if (this->safety != other.safety) {
       return false;
     }
     if (this->total != other.total) {

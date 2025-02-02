@@ -1,5 +1,0 @@
-  File "/home/koara/robosys2024-4/ros2_ws/install/mypkg/lib/python3.8/site-packages/mypkg/test.py", line 28
-    else if value.color == 9:
-         ^
-SyntaxError: invalid syntax
-

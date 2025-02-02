@@ -1,0 +1,165 @@
+[0.000000] (-) TimerEvent: {}
+[0.000296] (mypkg) JobQueued: {'identifier': 'mypkg', 'dependencies': OrderedDict()}
+[0.000394] (person_msgs) JobQueued: {'identifier': 'person_msgs', 'dependencies': OrderedDict()}
+[0.000415] (mypkg) JobStarted: {'identifier': 'mypkg'}
+[0.017847] (person_msgs) JobStarted: {'identifier': 'person_msgs'}
+[0.098927] (-) TimerEvent: {}
+[0.199328] (-) TimerEvent: {}
+[0.222144] (person_msgs) JobProgress: {'identifier': 'person_msgs', 'progress': 'cmake'}
+[0.222471] (person_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/koara/robosys2024-02.2/ros2_ws/src/person_msgs', '-DCMAKE_INSTALL_PREFIX=/home/koara/robosys2024-02.2/install/person_msgs'], 'cwd': '/home/koara/robosys2024-02.2/build/person_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'koara'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/koara/robosys2024-4/ros2_ws/install/person_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/koara'), ('OLDPWD', '/home/koara'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/koara/robosys2024-4/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'koara'), ('NAME', 'DESKTOP-BNTSF3L'), ('WSL_INTEROP', '/run/WSL/29584_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu20.04LTS_2004.6.16.0_x64__79rhkp1fndgsc:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/MinGW/bin:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/koara/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/koara/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/koara/robosys2024-4/ros2_ws/install/person_msgs:/home/koara/robosys2024-4/ros2_ws/install/mypkg:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/koara/robosys2024-02.2/build/person_msgs'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/koara/robosys2024-4/ros2_ws/install/person_msgs/lib/python3.8/site-packages:/home/koara/robosys2024-4/ros2_ws/install/mypkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/home/koara/robosys2024-4/ros2_ws/install/person_msgs:/home/koara/robosys2024-4/ros2_ws/install/mypkg:/opt/ros/foxy')]), 'shell': False}
+[0.299506] (-) TimerEvent: {}
+[0.399903] (-) TimerEvent: {}
+[0.500218] (-) TimerEvent: {}
+[0.600557] (-) TimerEvent: {}
+[0.700863] (-) TimerEvent: {}
+[0.706974] (mypkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../build/mypkg', 'build', '--build-base', '/home/koara/robosys2024-02.2/build/mypkg/build', 'install', '--record', '/home/koara/robosys2024-02.2/build/mypkg/install.log', '--install-scripts', '$base/lib/mypkg', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/koara/robosys2024-02.2/ros2_ws/src/mypkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'koara', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/koara/robosys2024-4/ros2_ws/install/person_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/koara', 'OLDPWD': '/home/koara', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-20.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/koara/robosys2024-4/ros2_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'koara', 'NAME': 'DESKTOP-BNTSF3L', 'WSL_INTEROP': '/run/WSL/29584_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu20.04LTS_2004.6.16.0_x64__79rhkp1fndgsc:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/MinGW/bin:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR:/mnt/c/Users/koara/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/koara/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/koara/robosys2024-4/ros2_ws/install/person_msgs:/home/koara/robosys2024-4/ros2_ws/install/mypkg:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/koara/robosys2024-02.2/build/mypkg', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/koara/robosys2024-02.2/build/mypkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/koara/robosys2024-02.2/install/mypkg/lib/python3.8/site-packages:/home/koara/robosys2024-4/ros2_ws/install/person_msgs/lib/python3.8/site-packages:/home/koara/robosys2024-4/ros2_ws/install/mypkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': ''}, 'shell': False}
+[0.728270] (person_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.800987] (-) TimerEvent: {}
+[0.896118] (mypkg) StdoutLine: {'line': b'running egg_info\n'}
+[0.896425] (mypkg) StdoutLine: {'line': b'creating ../../../build/mypkg/mypkg.egg-info\n'}
+[0.896983] (mypkg) StdoutLine: {'line': b'writing ../../../build/mypkg/mypkg.egg-info/PKG-INFO\n'}
+[0.897267] (mypkg) StdoutLine: {'line': b'writing dependency_links to ../../../build/mypkg/mypkg.egg-info/dependency_links.txt\n'}
+[0.897544] (mypkg) StdoutLine: {'line': b'writing entry points to ../../../build/mypkg/mypkg.egg-info/entry_points.txt\n'}
+[0.897718] (mypkg) StdoutLine: {'line': b'writing requirements to ../../../build/mypkg/mypkg.egg-info/requires.txt\n'}
+[0.897975] (mypkg) StdoutLine: {'line': b'writing top-level names to ../../../build/mypkg/mypkg.egg-info/top_level.txt\n'}
+[0.901111] (-) TimerEvent: {}
+[0.901387] (mypkg) StdoutLine: {'line': b"writing manifest file '../../../build/mypkg/mypkg.egg-info/SOURCES.txt'\n"}
+[0.933949] (mypkg) StdoutLine: {'line': b"reading manifest file '../../../build/mypkg/mypkg.egg-info/SOURCES.txt'\n"}
+[0.934657] (mypkg) StdoutLine: {'line': b"writing manifest file '../../../build/mypkg/mypkg.egg-info/SOURCES.txt'\n"}
+[0.934965] (mypkg) StdoutLine: {'line': b'running build\n'}
+[0.935099] (mypkg) StdoutLine: {'line': b'running build_py\n'}
+[0.935170] (mypkg) StdoutLine: {'line': b'creating /home/koara/robosys2024-02.2/build/mypkg/build\n'}
+[0.935844] (mypkg) StdoutLine: {'line': b'creating /home/koara/robosys2024-02.2/build/mypkg/build/lib\n'}
+[0.936440] (mypkg) StdoutLine: {'line': b'creating /home/koara/robosys2024-02.2/build/mypkg/build/lib/mypkg\n'}
+[0.937089] (mypkg) StdoutLine: {'line': b'copying mypkg/range.py -> /home/koara/robosys2024-02.2/build/mypkg/build/lib/mypkg\n'}
+[0.938184] (mypkg) StdoutLine: {'line': b'copying mypkg/__init__.py -> /home/koara/robosys2024-02.2/build/mypkg/build/lib/mypkg\n'}
+[0.938542] (mypkg) StdoutLine: {'line': b'copying mypkg/test.py -> /home/koara/robosys2024-02.2/build/mypkg/build/lib/mypkg\n'}
+[0.939341] (mypkg) StdoutLine: {'line': b'running install\n'}
+[0.940053] (mypkg) StdoutLine: {'line': b'running install_lib\n'}
+[0.940757] (mypkg) StdoutLine: {'line': b'creating /home/koara/robosys2024-02.2/install/mypkg/lib/python3.8/site-packages/mypkg\n'}
+[0.941480] (mypkg) StdoutLine: {'line': b'copying /home/koara/robosys2024-02.2/build/mypkg/build/lib/mypkg/range.py -> /home/koara/robosys2024-02.2/install/mypkg/lib/python3.8/site-packages/mypkg\n'}
+[0.941633] (mypkg) StdoutLine: {'line': b'copying /home/koara/robosys2024-02.2/build/mypkg/build/lib/mypkg/__init__.py -> /home/koara/robosys2024-02.2/install/mypkg/lib/python3.8/site-packages/mypkg\n'}
+[0.941826] (mypkg) StdoutLine: {'line': b'copying /home/koara/robosys2024-02.2/build/mypkg/build/lib/mypkg/test.py -> /home/koara/robosys2024-02.2/install/mypkg/lib/python3.8/site-packages/mypkg\n'}
+[0.942256] (mypkg) StdoutLine: {'line': b'byte-compiling /home/koara/robosys2024-02.2/install/mypkg/lib/python3.8/site-packages/mypkg/range.py to range.cpython-38.pyc\n'}
+[0.944169] (mypkg) StdoutLine: {'line': b'byte-compiling /home/koara/robosys2024-02.2/install/mypkg/lib/python3.8/site-packages/mypkg/__init__.py to __init__.cpython-38.pyc\n'}
+[0.944455] (mypkg) StdoutLine: {'line': b'byte-compiling /home/koara/robosys2024-02.2/install/mypkg/lib/python3.8/site-packages/mypkg/test.py to test.cpython-38.pyc\n'}
+[0.944782] (mypkg) StdoutLine: {'line': b'running install_data\n'}
+[0.945050] (mypkg) StdoutLine: {'line': b'creating /home/koara/robosys2024-02.2/install/mypkg/share/ament_index\n'}
+[0.946259] (mypkg) StdoutLine: {'line': b'creating /home/koara/robosys2024-02.2/install/mypkg/share/ament_index/resource_index\n'}
+[0.947194] (mypkg) StdoutLine: {'line': b'creating /home/koara/robosys2024-02.2/install/mypkg/share/ament_index/resource_index/packages\n'}
+[0.948043] (mypkg) StdoutLine: {'line': b'copying resource/mypkg -> /home/koara/robosys2024-02.2/install/mypkg/share/ament_index/resource_index/packages\n'}
+[0.948218] (mypkg) StdoutLine: {'line': b'copying package.xml -> /home/koara/robosys2024-02.2/install/mypkg/share/mypkg\n'}
+[0.948394] (mypkg) StdoutLine: {'line': b'copying launch/talk_listen.launch.py -> /home/koara/robosys2024-02.2/install/mypkg/share/mypkg\n'}
+[0.948727] (mypkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.950734] (mypkg) StdoutLine: {'line': b'Copying ../../../build/mypkg/mypkg.egg-info to /home/koara/robosys2024-02.2/install/mypkg/lib/python3.8/site-packages/mypkg-0.0.0-py3.8.egg-info\n'}
+[0.952684] (mypkg) StdoutLine: {'line': b'running install_scripts\n'}
+[0.970462] (mypkg) StdoutLine: {'line': b'Installing range script to /home/koara/robosys2024-02.2/install/mypkg/lib/mypkg\n'}
+[0.970978] (mypkg) StdoutLine: {'line': b'Installing test script to /home/koara/robosys2024-02.2/install/mypkg/lib/mypkg\n'}
+[0.971242] (mypkg) StdoutLine: {'line': b"writing list of installed files to '/home/koara/robosys2024-02.2/build/mypkg/install.log'\n"}
+[0.996515] (mypkg) CommandEnded: {'returncode': 0}
+[1.001251] (-) TimerEvent: {}
+[1.019322] (mypkg) JobEnded: {'identifier': 'mypkg', 'rc': 0}
+[1.062898] (person_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[1.101433] (-) TimerEvent: {}
+[1.123175] (person_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[1.201623] (-) TimerEvent: {}
+[1.302098] (-) TimerEvent: {}
+[1.308158] (person_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[1.311925] (person_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.402211] (-) TimerEvent: {}
+[1.422776] (person_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.433310] (person_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.434173] (person_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.437718] (person_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[1.502353] (-) TimerEvent: {}
+[1.554208] (person_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[1.555183] (person_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.602503] (-) TimerEvent: {}
+[1.671243] (person_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.681443] (person_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.681764] (person_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.702079] (person_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[1.702626] (-) TimerEvent: {}
+[1.730539] (person_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[1.730785] (person_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.802789] (-) TimerEvent: {}
+[1.903159] (-) TimerEvent: {}
+[1.928351] (person_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[1.932941] (person_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[1.942206] (person_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.953942] (person_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[2.003296] (-) TimerEvent: {}
+[2.103645] (-) TimerEvent: {}
+[2.204005] (-) TimerEvent: {}
+[2.304400] (-) TimerEvent: {}
+[2.404811] (-) TimerEvent: {}
+[2.505277] (-) TimerEvent: {}
+[2.605694] (-) TimerEvent: {}
+[2.675929] (person_msgs) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[2.705870] (-) TimerEvent: {}
+[2.806326] (-) TimerEvent: {}
+[2.906826] (-) TimerEvent: {}
+[3.007215] (-) TimerEvent: {}
+[3.107683] (-) TimerEvent: {}
+[3.208143] (-) TimerEvent: {}
+[3.308592] (-) TimerEvent: {}
+[3.315087] (person_msgs) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[3.408751] (-) TimerEvent: {}
+[3.509133] (-) TimerEvent: {}
+[3.609558] (-) TimerEvent: {}
+[3.710137] (-) TimerEvent: {}
+[3.810514] (-) TimerEvent: {}
+[3.910918] (-) TimerEvent: {}
+[4.011382] (-) TimerEvent: {}
+[4.112049] (-) TimerEvent: {}
+[4.212557] (-) TimerEvent: {}
+[4.313216] (-) TimerEvent: {}
+[4.413626] (-) TimerEvent: {}
+[4.514025] (-) TimerEvent: {}
+[4.585616] (person_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.614239] (-) TimerEvent: {}
+[4.670209] (person_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[4.714448] (-) TimerEvent: {}
+[4.814867] (-) TimerEvent: {}
+[4.915208] (-) TimerEvent: {}
+[4.992232] (person_msgs) StderrLine: {'line': b'CMake Error at /opt/ros/foxy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:60 (message):\n'}
+[4.992504] (person_msgs) StderrLine: {'line': b'  execute_process(/usr/bin/python3 -m rosidl_adapter --package-name\n'}
+[4.992737] (person_msgs) StderrLine: {'line': b'  person_msgs --arguments-file\n'}
+[4.992802] (person_msgs) StderrLine: {'line': b'  /home/koara/robosys2024-02.2/build/person_msgs/rosidl_adapter__arguments__person_msgs.json\n'}
+[4.992981] (person_msgs) StderrLine: {'line': b'  --output-dir\n'}
+[4.993044] (person_msgs) StderrLine: {'line': b'  /home/koara/robosys2024-02.2/build/person_msgs/rosidl_adapter/person_msgs\n'}
+[4.993168] (person_msgs) StderrLine: {'line': b'  --output-file\n'}
+[4.993284] (person_msgs) StderrLine: {'line': b'  /home/koara/robosys2024-02.2/build/person_msgs/rosidl_adapter/person_msgs.idls)\n'}
+[4.993341] (person_msgs) StderrLine: {'line': b'  returned error code 1:\n'}
+[4.993391] (person_msgs) StderrLine: {'line': b'\n'}
+[4.993440] (person_msgs) StderrLine: {'line': b'  Traceback (most recent call last):\n'}
+[4.993549] (person_msgs) StderrLine: {'line': b'\n'}
+[4.993603] (person_msgs) StderrLine: {'line': b'    File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main\n'}
+[4.993658] (person_msgs) StderrLine: {'line': b'      return _run_code(code, main_globals, None,\n'}
+[4.993731] (person_msgs) StderrLine: {'line': b'    File "/usr/lib/python3.8/runpy.py", line 87, in _run_code\n'}
+[4.993783] (person_msgs) StderrLine: {'line': b'      exec(code, run_globals)\n'}
+[4.993835] (person_msgs) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__main__.py", line 19, in <module>\n'}
+[4.993968] (person_msgs) StderrLine: {'line': b'      sys.exit(main())\n'}
+[4.994330] (person_msgs) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/main.py", line 53, in main\n'}
+[4.994487] (person_msgs) StderrLine: {'line': b'      abs_idl_file = convert_to_idl(\n'}
+[4.994554] (person_msgs) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__init__.py", line 24, in convert_to_idl\n'}
+[4.994623] (person_msgs) StderrLine: {'line': b'      return convert_srv_to_idl(\n'}
+[4.994672] (person_msgs) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/srv/__init__.py", line 28, in convert_srv_to_idl\n'}
+[4.994721] (person_msgs) StderrLine: {'line': b'      srv = parse_service_string(package_name, input_file.stem, content)\n'}
+[4.994921] (person_msgs) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 843, in parse_service_string\n'}
+[4.994984] (person_msgs) StderrLine: {'line': b'      raise InvalidServiceSpecification(\n'}
+[4.995169] (person_msgs) StderrLine: {'line': b'\n'}
+[4.995221] (person_msgs) StderrLine: {'line': b'  rosidl_adapter.parser.InvalidServiceSpecification: Could not find separator\n'}
+[4.995269] (person_msgs) StderrLine: {'line': b"  '---' between request and response\n"}
+[4.995317] (person_msgs) StderrLine: {'line': b'\n'}
+[4.995379] (person_msgs) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[4.995587] (person_msgs) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)\n'}
+[4.995644] (person_msgs) StderrLine: {'line': b'  CMakeLists.txt:27 (rosidl_generate_interfaces)\n'}
+[4.995697] (person_msgs) StderrLine: {'line': b'\n'}
+[4.995811] (person_msgs) StderrLine: {'line': b'\n'}
+[4.995865] (person_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[4.995922] (person_msgs) StdoutLine: {'line': b'See also "/home/koara/robosys2024-02.2/build/person_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[5.001633] (person_msgs) CommandEnded: {'returncode': 1}
+[5.015357] (-) TimerEvent: {}
+[5.020855] (person_msgs) JobEnded: {'identifier': 'person_msgs', 'rc': 1}
+[5.031737] (-) EventReactorShutdown: {}

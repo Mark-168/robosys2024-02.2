@@ -50,22 +50,13 @@ bool person_msgs__srv__query__request__convert_from_py(PyObject * _pymsg, void *
     assert(strncmp("person_msgs.srv._query.Query_Request", full_classname_dest, 36) == 0);
   }
   person_msgs__srv__Query_Request * ros_message = _ros_message;
-  {  // light
-    PyObject * field = PyObject_GetAttrString(_pymsg, "light");
+  {  // safety
+    PyObject * field = PyObject_GetAttrString(_pymsg, "safety");
     if (!field) {
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->light = (uint8_t)PyLong_AsUnsignedLong(field);
-    Py_DECREF(field);
-  }
-  {  // value
-    PyObject * field = PyObject_GetAttrString(_pymsg, "value");
-    if (!field) {
-      return false;
-    }
-    assert(PyLong_Check(field));
-    ros_message->value = (uint8_t)PyLong_AsUnsignedLong(field);
+    ros_message->safety = (uint8_t)PyLong_AsUnsignedLong(field);
     Py_DECREF(field);
   }
 
@@ -90,22 +81,11 @@ PyObject * person_msgs__srv__query__request__convert_to_py(void * raw_ros_messag
     }
   }
   person_msgs__srv__Query_Request * ros_message = (person_msgs__srv__Query_Request *)raw_ros_message;
-  {  // light
+  {  // safety
     PyObject * field = NULL;
-    field = PyLong_FromUnsignedLong(ros_message->light);
+    field = PyLong_FromUnsignedLong(ros_message->safety);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "light", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // value
-    PyObject * field = NULL;
-    field = PyLong_FromUnsignedLong(ros_message->value);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "value", field);
+      int rc = PyObject_SetAttrString(_pymessage, "safety", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
@@ -165,15 +145,6 @@ bool person_msgs__srv__query__response__convert_from_py(PyObject * _pymsg, void 
     assert(strncmp("person_msgs.srv._query.Query_Response", full_classname_dest, 37) == 0);
   }
   person_msgs__srv__Query_Response * ros_message = _ros_message;
-  {  // color
-    PyObject * field = PyObject_GetAttrString(_pymsg, "color");
-    if (!field) {
-      return false;
-    }
-    assert(PyLong_Check(field));
-    ros_message->color = (uint8_t)PyLong_AsUnsignedLong(field);
-    Py_DECREF(field);
-  }
   {  // total
     PyObject * field = PyObject_GetAttrString(_pymsg, "total");
     if (!field) {
@@ -205,17 +176,6 @@ PyObject * person_msgs__srv__query__response__convert_to_py(void * raw_ros_messa
     }
   }
   person_msgs__srv__Query_Response * ros_message = (person_msgs__srv__Query_Response *)raw_ros_message;
-  {  // color
-    PyObject * field = NULL;
-    field = PyLong_FromUnsignedLong(ros_message->color);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "color", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
   {  // total
     PyObject * field = NULL;
     field = PyLong_FromUnsignedLong(ros_message->total);

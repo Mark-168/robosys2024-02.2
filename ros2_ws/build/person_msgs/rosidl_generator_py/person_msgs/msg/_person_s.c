@@ -50,31 +50,13 @@ bool person_msgs__msg__person__convert_from_py(PyObject * _pymsg, void * _ros_me
     assert(strncmp("person_msgs.msg._person.Person", full_classname_dest, 30) == 0);
   }
   person_msgs__msg__Person * ros_message = _ros_message;
-  {  // light
-    PyObject * field = PyObject_GetAttrString(_pymsg, "light");
+  {  // safety
+    PyObject * field = PyObject_GetAttrString(_pymsg, "safety");
     if (!field) {
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->light = (uint8_t)PyLong_AsUnsignedLong(field);
-    Py_DECREF(field);
-  }
-  {  // value
-    PyObject * field = PyObject_GetAttrString(_pymsg, "value");
-    if (!field) {
-      return false;
-    }
-    assert(PyLong_Check(field));
-    ros_message->value = (uint8_t)PyLong_AsUnsignedLong(field);
-    Py_DECREF(field);
-  }
-  {  // color
-    PyObject * field = PyObject_GetAttrString(_pymsg, "color");
-    if (!field) {
-      return false;
-    }
-    assert(PyLong_Check(field));
-    ros_message->color = (uint8_t)PyLong_AsUnsignedLong(field);
+    ros_message->safety = (uint8_t)PyLong_AsUnsignedLong(field);
     Py_DECREF(field);
   }
   {  // total
@@ -108,33 +90,11 @@ PyObject * person_msgs__msg__person__convert_to_py(void * raw_ros_message)
     }
   }
   person_msgs__msg__Person * ros_message = (person_msgs__msg__Person *)raw_ros_message;
-  {  // light
+  {  // safety
     PyObject * field = NULL;
-    field = PyLong_FromUnsignedLong(ros_message->light);
+    field = PyLong_FromUnsignedLong(ros_message->safety);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "light", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // value
-    PyObject * field = NULL;
-    field = PyLong_FromUnsignedLong(ros_message->value);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "value", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // color
-    PyObject * field = NULL;
-    field = PyLong_FromUnsignedLong(ros_message->color);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "color", field);
+      int rc = PyObject_SetAttrString(_pymessage, "safety", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

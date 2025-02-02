@@ -49,19 +49,9 @@ static bool _Person__cdr_serialize(
     return false;
   }
   const _Person__ros_msg_type * ros_message = static_cast<const _Person__ros_msg_type *>(untyped_ros_message);
-  // Field name: light
+  // Field name: safety
   {
-    cdr << ros_message->light;
-  }
-
-  // Field name: value
-  {
-    cdr << ros_message->value;
-  }
-
-  // Field name: color
-  {
-    cdr << ros_message->color;
+    cdr << ros_message->safety;
   }
 
   // Field name: total
@@ -81,19 +71,9 @@ static bool _Person__cdr_deserialize(
     return false;
   }
   _Person__ros_msg_type * ros_message = static_cast<_Person__ros_msg_type *>(untyped_ros_message);
-  // Field name: light
+  // Field name: safety
   {
-    cdr >> ros_message->light;
-  }
-
-  // Field name: value
-  {
-    cdr >> ros_message->value;
-  }
-
-  // Field name: color
-  {
-    cdr >> ros_message->color;
+    cdr >> ros_message->safety;
   }
 
   // Field name: total
@@ -118,21 +98,9 @@ size_t get_serialized_size_person_msgs__msg__Person(
   (void)padding;
   (void)wchar_size;
 
-  // field.name light
+  // field.name safety
   {
-    size_t item_size = sizeof(ros_message->light);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name value
-  {
-    size_t item_size = sizeof(ros_message->value);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name color
-  {
-    size_t item_size = sizeof(ros_message->color);
+    size_t item_size = sizeof(ros_message->safety);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -166,19 +134,7 @@ size_t max_serialized_size_person_msgs__msg__Person(
   (void)wchar_size;
   (void)full_bounded;
 
-  // member: light
-  {
-    size_t array_size = 1;
-
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-  // member: value
-  {
-    size_t array_size = 1;
-
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-  // member: color
+  // member: safety
   {
     size_t array_size = 1;
 

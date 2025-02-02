@@ -25,8 +25,6 @@ setup(
     'console_scripts': [
         'range = mypkg.range:main',
         'test = mypkg.test:main',
-        'range02 = mypkg.range02:main',
-        'test02 = mypkg.test02:main',
         ],
     },
 )

@@ -16,8 +16,7 @@ person_msgs__srv__Query_Request__init(person_msgs__srv__Query_Request * msg)
   if (!msg) {
     return false;
   }
-  // light
-  // value
+  // safety
   return true;
 }
 
@@ -27,8 +26,7 @@ person_msgs__srv__Query_Request__fini(person_msgs__srv__Query_Request * msg)
   if (!msg) {
     return;
   }
-  // light
-  // value
+  // safety
 }
 
 bool
@@ -37,12 +35,8 @@ person_msgs__srv__Query_Request__are_equal(const person_msgs__srv__Query_Request
   if (!lhs || !rhs) {
     return false;
   }
-  // light
-  if (lhs->light != rhs->light) {
-    return false;
-  }
-  // value
-  if (lhs->value != rhs->value) {
+  // safety
+  if (lhs->safety != rhs->safety) {
     return false;
   }
   return true;
@@ -56,10 +50,8 @@ person_msgs__srv__Query_Request__copy(
   if (!input || !output) {
     return false;
   }
-  // light
-  output->light = input->light;
-  // value
-  output->value = input->value;
+  // safety
+  output->safety = input->safety;
   return true;
 }
 
@@ -244,7 +236,6 @@ person_msgs__srv__Query_Response__init(person_msgs__srv__Query_Response * msg)
   if (!msg) {
     return false;
   }
-  // color
   // total
   return true;
 }
@@ -255,7 +246,6 @@ person_msgs__srv__Query_Response__fini(person_msgs__srv__Query_Response * msg)
   if (!msg) {
     return;
   }
-  // color
   // total
 }
 
@@ -263,10 +253,6 @@ bool
 person_msgs__srv__Query_Response__are_equal(const person_msgs__srv__Query_Response * lhs, const person_msgs__srv__Query_Response * rhs)
 {
   if (!lhs || !rhs) {
-    return false;
-  }
-  // color
-  if (lhs->color != rhs->color) {
     return false;
   }
   // total
@@ -284,8 +270,6 @@ person_msgs__srv__Query_Response__copy(
   if (!input || !output) {
     return false;
   }
-  // color
-  output->color = input->color;
   // total
   output->total = input->total;
   return true;

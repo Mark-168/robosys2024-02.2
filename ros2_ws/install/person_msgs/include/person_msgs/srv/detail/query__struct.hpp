@@ -37,8 +37,7 @@ struct Query_Request_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->light = 0;
-      this->value = 0;
+      this->safety = 0;
     }
   }
 
@@ -48,30 +47,20 @@ struct Query_Request_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->light = 0;
-      this->value = 0;
+      this->safety = 0;
     }
   }
 
   // field types and members
-  using _light_type =
+  using _safety_type =
     uint8_t;
-  _light_type light;
-  using _value_type =
-    uint8_t;
-  _value_type value;
+  _safety_type safety;
 
   // setters for named parameter idiom
-  Type & set__light(
+  Type & set__safety(
     const uint8_t & _arg)
   {
-    this->light = _arg;
-    return *this;
-  }
-  Type & set__value(
-    const uint8_t & _arg)
-  {
-    this->value = _arg;
+    this->safety = _arg;
     return *this;
   }
 
@@ -117,10 +106,7 @@ struct Query_Request_
   // comparison operators
   bool operator==(const Query_Request_ & other) const
   {
-    if (this->light != other.light) {
-      return false;
-    }
-    if (this->value != other.value) {
+    if (this->safety != other.safety) {
       return false;
     }
     return true;
@@ -165,7 +151,6 @@ struct Query_Response_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->color = 0;
       this->total = 0;
     }
   }
@@ -176,26 +161,16 @@ struct Query_Response_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->color = 0;
       this->total = 0;
     }
   }
 
   // field types and members
-  using _color_type =
-    uint8_t;
-  _color_type color;
   using _total_type =
     uint8_t;
   _total_type total;
 
   // setters for named parameter idiom
-  Type & set__color(
-    const uint8_t & _arg)
-  {
-    this->color = _arg;
-    return *this;
-  }
   Type & set__total(
     const uint8_t & _arg)
   {
@@ -245,9 +220,6 @@ struct Query_Response_
   // comparison operators
   bool operator==(const Query_Response_ & other) const
   {
-    if (this->color != other.color) {
-      return false;
-    }
     if (this->total != other.total) {
       return false;
     }

@@ -53,22 +53,16 @@ class Person(metaclass=Metaclass_Person):
     """Message class 'Person'."""
 
     __slots__ = [
-        '_light',
-        '_value',
-        '_color',
+        '_safety',
         '_total',
     ]
 
     _fields_and_field_types = {
-        'light': 'uint8',
-        'value': 'uint8',
-        'color': 'uint8',
+        'safety': 'uint8',
         'total': 'uint8',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
-        rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
     )
@@ -77,9 +71,7 @@ class Person(metaclass=Metaclass_Person):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.light = kwargs.get('light', int())
-        self.value = kwargs.get('value', int())
-        self.color = kwargs.get('color', int())
+        self.safety = kwargs.get('safety', int())
         self.total = kwargs.get('total', int())
 
     def __repr__(self):
@@ -111,11 +103,7 @@ class Person(metaclass=Metaclass_Person):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.light != other.light:
-            return False
-        if self.value != other.value:
-            return False
-        if self.color != other.color:
+        if self.safety != other.safety:
             return False
         if self.total != other.total:
             return False
@@ -127,49 +115,19 @@ class Person(metaclass=Metaclass_Person):
         return copy(cls._fields_and_field_types)
 
     @property
-    def light(self):
-        """Message field 'light'."""
-        return self._light
+    def safety(self):
+        """Message field 'safety'."""
+        return self._safety
 
-    @light.setter
-    def light(self, value):
+    @safety.setter
+    def safety(self, value):
         if __debug__:
             assert \
                 isinstance(value, int), \
-                "The 'light' field must be of type 'int'"
+                "The 'safety' field must be of type 'int'"
             assert value >= 0 and value < 256, \
-                "The 'light' field must be an unsigned integer in [0, 255]"
-        self._light = value
-
-    @property
-    def value(self):
-        """Message field 'value'."""
-        return self._value
-
-    @value.setter
-    def value(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, int), \
-                "The 'value' field must be of type 'int'"
-            assert value >= 0 and value < 256, \
-                "The 'value' field must be an unsigned integer in [0, 255]"
-        self._value = value
-
-    @property
-    def color(self):
-        """Message field 'color'."""
-        return self._color
-
-    @color.setter
-    def color(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, int), \
-                "The 'color' field must be of type 'int'"
-            assert value >= 0 and value < 256, \
-                "The 'color' field must be an unsigned integer in [0, 255]"
-        self._color = value
+                "The 'safety' field must be an unsigned integer in [0, 255]"
+        self._safety = value
 
     @property
     def total(self):

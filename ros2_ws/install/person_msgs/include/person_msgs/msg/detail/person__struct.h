@@ -20,9 +20,7 @@ extern "C"
 // Struct defined in msg/Person in the package person_msgs.
 typedef struct person_msgs__msg__Person
 {
-  uint8_t light;
-  uint8_t value;
-  uint8_t color;
+  uint8_t safety;
   uint8_t total;
 } person_msgs__msg__Person;
 

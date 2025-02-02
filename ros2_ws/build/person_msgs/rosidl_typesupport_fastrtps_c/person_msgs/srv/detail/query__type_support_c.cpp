@@ -49,14 +49,9 @@ static bool _Query_Request__cdr_serialize(
     return false;
   }
   const _Query_Request__ros_msg_type * ros_message = static_cast<const _Query_Request__ros_msg_type *>(untyped_ros_message);
-  // Field name: light
+  // Field name: safety
   {
-    cdr << ros_message->light;
-  }
-
-  // Field name: value
-  {
-    cdr << ros_message->value;
+    cdr << ros_message->safety;
   }
 
   return true;
@@ -71,14 +66,9 @@ static bool _Query_Request__cdr_deserialize(
     return false;
   }
   _Query_Request__ros_msg_type * ros_message = static_cast<_Query_Request__ros_msg_type *>(untyped_ros_message);
-  // Field name: light
+  // Field name: safety
   {
-    cdr >> ros_message->light;
-  }
-
-  // Field name: value
-  {
-    cdr >> ros_message->value;
+    cdr >> ros_message->safety;
   }
 
   return true;
@@ -98,15 +88,9 @@ size_t get_serialized_size_person_msgs__srv__Query_Request(
   (void)padding;
   (void)wchar_size;
 
-  // field.name light
+  // field.name safety
   {
-    size_t item_size = sizeof(ros_message->light);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name value
-  {
-    size_t item_size = sizeof(ros_message->value);
+    size_t item_size = sizeof(ros_message->safety);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -134,13 +118,7 @@ size_t max_serialized_size_person_msgs__srv__Query_Request(
   (void)wchar_size;
   (void)full_bounded;
 
-  // member: light
-  {
-    size_t array_size = 1;
-
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-  // member: value
+  // member: safety
   {
     size_t array_size = 1;
 
@@ -236,11 +214,6 @@ static bool _Query_Response__cdr_serialize(
     return false;
   }
   const _Query_Response__ros_msg_type * ros_message = static_cast<const _Query_Response__ros_msg_type *>(untyped_ros_message);
-  // Field name: color
-  {
-    cdr << ros_message->color;
-  }
-
   // Field name: total
   {
     cdr << ros_message->total;
@@ -258,11 +231,6 @@ static bool _Query_Response__cdr_deserialize(
     return false;
   }
   _Query_Response__ros_msg_type * ros_message = static_cast<_Query_Response__ros_msg_type *>(untyped_ros_message);
-  // Field name: color
-  {
-    cdr >> ros_message->color;
-  }
-
   // Field name: total
   {
     cdr >> ros_message->total;
@@ -285,12 +253,6 @@ size_t get_serialized_size_person_msgs__srv__Query_Response(
   (void)padding;
   (void)wchar_size;
 
-  // field.name color
-  {
-    size_t item_size = sizeof(ros_message->color);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
   // field.name total
   {
     size_t item_size = sizeof(ros_message->total);
@@ -321,12 +283,6 @@ size_t max_serialized_size_person_msgs__srv__Query_Response(
   (void)wchar_size;
   (void)full_bounded;
 
-  // member: color
-  {
-    size_t array_size = 1;
-
-    current_alignment += array_size * sizeof(uint8_t);
-  }
   // member: total
   {
     size_t array_size = 1;
