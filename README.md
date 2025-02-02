@@ -10,17 +10,17 @@
 ## セットアップ
 1. ワークスペースの作成
 ```
-mkdir -p ~/ros2_ws
-cd ~/ros2_ws
+$ mkdir -p ~/ros2_ws
+$ cd ~/ros2_ws
 ```
 
 2. リポジトリのクローン
 ```
-git clone https://github.com/Mark-168/robosys2024-02.2.git
+$ git clone https://github.com/Mark-168/robosys2024-02.2.git
 ```
 3. ビルド
 ```
-colcon build
+$ colcon build
 ```
 
 ### ノード
@@ -36,12 +36,12 @@ colcon build
 ## 使い方
 1. ROS2を起動(別ターミナル)
 ```
-ros2 run mypkg range
+$ ros2 run mypkg range
 ```
 2. サービスqueryにperson_msgs/srv/Query型の値を送信
 ```
-ros2 service call /query person_msgs/srv/Query "{safety: 20}"
-ros2 service call /query person_msgs/srv/Query "{safety: 50}"
+$ ros2 service call /query person_msgs/srv/Query "{safety: 20}"
+$ ros2 service call /query person_msgs/srv/Query "{safety: 50}"
 ```
 
 ### ノード
