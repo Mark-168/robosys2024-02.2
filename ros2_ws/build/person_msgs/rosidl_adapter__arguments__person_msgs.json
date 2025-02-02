@@ -1,7 +1,0 @@
-{
-  "package_name": "person_msgs",
-  "non_idl_tuples": [
-    "/home/koara/robosys2024-02.2/ros2_ws/src/person_msgs:msg/Person.msg",
-    "/home/koara/robosys2024-02.2/ros2_ws/src/person_msgs:srv/Query.srv"
-  ]
-}

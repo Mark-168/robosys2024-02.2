@@ -1,2 +1,2 @@
-uint8 value
+uint8 safety
 uint8 total

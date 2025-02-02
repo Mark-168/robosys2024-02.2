@@ -1,4 +1,0 @@
-[console_scripts]
-range = mypkg.range:main
-test = mypkg.test:main
-

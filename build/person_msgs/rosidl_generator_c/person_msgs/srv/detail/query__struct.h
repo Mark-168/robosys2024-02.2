@@ -20,7 +20,7 @@ extern "C"
 // Struct defined in srv/Query in the package person_msgs.
 typedef struct person_msgs__srv__Query_Request
 {
-  uint8_t value;
+  uint8_t safety;
 } person_msgs__srv__Query_Request;
 
 // Struct for a sequence of person_msgs__srv__Query_Request.

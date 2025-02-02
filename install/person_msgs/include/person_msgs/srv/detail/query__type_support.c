@@ -33,14 +33,14 @@ void Query_Request__rosidl_typesupport_introspection_c__Query_Request_fini_funct
 
 static rosidl_typesupport_introspection_c__MessageMember Query_Request__rosidl_typesupport_introspection_c__Query_Request_message_member_array[1] = {
   {
-    "value",  // name
+    "safety",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(person_msgs__srv__Query_Request, value),  // bytes offset in struct
+    offsetof(person_msgs__srv__Query_Request, safety),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer

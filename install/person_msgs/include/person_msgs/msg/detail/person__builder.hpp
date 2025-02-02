@@ -36,15 +36,15 @@ private:
   ::person_msgs::msg::Person msg_;
 };
 
-class Init_Person_value
+class Init_Person_safety
 {
 public:
-  Init_Person_value()
+  Init_Person_safety()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_Person_total value(::person_msgs::msg::Person::_value_type arg)
+  Init_Person_total safety(::person_msgs::msg::Person::_safety_type arg)
   {
-    msg_.value = std::move(arg);
+    msg_.safety = std::move(arg);
     return Init_Person_total(msg_);
   }
 
@@ -63,7 +63,7 @@ template<>
 inline
 auto build<::person_msgs::msg::Person>()
 {
-  return person_msgs::msg::builder::Init_Person_value();
+  return person_msgs::msg::builder::Init_Person_safety();
 }
 
 }  // namespace person_msgs

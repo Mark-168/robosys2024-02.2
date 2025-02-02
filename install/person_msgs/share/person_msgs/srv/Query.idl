@@ -6,7 +6,7 @@
 module person_msgs {
   module srv {
     struct Query_Request {
-      uint8 value;
+      uint8 safety;
     };
     struct Query_Response {
       uint8 total;

@@ -37,7 +37,7 @@ struct Query_Request_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->value = 0;
+      this->safety = 0;
     }
   }
 
@@ -47,20 +47,20 @@ struct Query_Request_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->value = 0;
+      this->safety = 0;
     }
   }
 
   // field types and members
-  using _value_type =
+  using _safety_type =
     uint8_t;
-  _value_type value;
+  _safety_type safety;
 
   // setters for named parameter idiom
-  Type & set__value(
+  Type & set__safety(
     const uint8_t & _arg)
   {
-    this->value = _arg;
+    this->safety = _arg;
     return *this;
   }
 
@@ -106,7 +106,7 @@ struct Query_Request_
   // comparison operators
   bool operator==(const Query_Request_ & other) const
   {
-    if (this->value != other.value) {
+    if (this->safety != other.safety) {
       return false;
     }
     return true;

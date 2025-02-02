@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/home/koara/robosys2024-02.2/ros2_ws/src/person_msgs")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/koara/robosys2024-02.2/build/person_msgs")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/koara/robosys2024-02.2/ros2_ws/build/person_msgs")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

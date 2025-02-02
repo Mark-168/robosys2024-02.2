@@ -39,14 +39,14 @@ void Person_fini_function(void * message_memory)
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMember Person_message_member_array[2] = {
   {
-    "value",  // name
+    "safety",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT8,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(person_msgs::msg::Person, value),  // bytes offset in struct
+    offsetof(person_msgs::msg::Person, safety),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer

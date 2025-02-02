@@ -50,13 +50,13 @@ bool person_msgs__srv__query__request__convert_from_py(PyObject * _pymsg, void *
     assert(strncmp("person_msgs.srv._query.Query_Request", full_classname_dest, 36) == 0);
   }
   person_msgs__srv__Query_Request * ros_message = _ros_message;
-  {  // value
-    PyObject * field = PyObject_GetAttrString(_pymsg, "value");
+  {  // safety
+    PyObject * field = PyObject_GetAttrString(_pymsg, "safety");
     if (!field) {
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->value = (uint8_t)PyLong_AsUnsignedLong(field);
+    ros_message->safety = (uint8_t)PyLong_AsUnsignedLong(field);
     Py_DECREF(field);
   }
 
@@ -81,11 +81,11 @@ PyObject * person_msgs__srv__query__request__convert_to_py(void * raw_ros_messag
     }
   }
   person_msgs__srv__Query_Request * ros_message = (person_msgs__srv__Query_Request *)raw_ros_message;
-  {  // value
+  {  // safety
     PyObject * field = NULL;
-    field = PyLong_FromUnsignedLong(ros_message->value);
+    field = PyLong_FromUnsignedLong(ros_message->safety);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "value", field);
+      int rc = PyObject_SetAttrString(_pymessage, "safety", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

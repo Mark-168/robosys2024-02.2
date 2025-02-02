@@ -37,7 +37,7 @@ struct Person_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->value = 0;
+      this->safety = 0;
       this->total = 0;
     }
   }
@@ -48,24 +48,24 @@ struct Person_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->value = 0;
+      this->safety = 0;
       this->total = 0;
     }
   }
 
   // field types and members
-  using _value_type =
+  using _safety_type =
     uint8_t;
-  _value_type value;
+  _safety_type safety;
   using _total_type =
     uint8_t;
   _total_type total;
 
   // setters for named parameter idiom
-  Type & set__value(
+  Type & set__safety(
     const uint8_t & _arg)
   {
-    this->value = _arg;
+    this->safety = _arg;
     return *this;
   }
   Type & set__total(
@@ -117,7 +117,7 @@ struct Person_
   // comparison operators
   bool operator==(const Person_ & other) const
   {
-    if (this->value != other.value) {
+    if (this->safety != other.safety) {
       return false;
     }
     if (this->total != other.total) {

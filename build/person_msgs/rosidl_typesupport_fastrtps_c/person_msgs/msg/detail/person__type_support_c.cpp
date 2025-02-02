@@ -49,9 +49,9 @@ static bool _Person__cdr_serialize(
     return false;
   }
   const _Person__ros_msg_type * ros_message = static_cast<const _Person__ros_msg_type *>(untyped_ros_message);
-  // Field name: value
+  // Field name: safety
   {
-    cdr << ros_message->value;
+    cdr << ros_message->safety;
   }
 
   // Field name: total
@@ -71,9 +71,9 @@ static bool _Person__cdr_deserialize(
     return false;
   }
   _Person__ros_msg_type * ros_message = static_cast<_Person__ros_msg_type *>(untyped_ros_message);
-  // Field name: value
+  // Field name: safety
   {
-    cdr >> ros_message->value;
+    cdr >> ros_message->safety;
   }
 
   // Field name: total
@@ -98,9 +98,9 @@ size_t get_serialized_size_person_msgs__msg__Person(
   (void)padding;
   (void)wchar_size;
 
-  // field.name value
+  // field.name safety
   {
-    size_t item_size = sizeof(ros_message->value);
+    size_t item_size = sizeof(ros_message->safety);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -134,7 +134,7 @@ size_t max_serialized_size_person_msgs__msg__Person(
   (void)wchar_size;
   (void)full_bounded;
 
-  // member: value
+  // member: safety
   {
     size_t array_size = 1;
 

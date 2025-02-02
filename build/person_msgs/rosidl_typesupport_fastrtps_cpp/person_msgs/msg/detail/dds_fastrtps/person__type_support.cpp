@@ -32,8 +32,8 @@ cdr_serialize(
   const person_msgs::msg::Person & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: value
-  cdr << ros_message.value;
+  // Member: safety
+  cdr << ros_message.safety;
   // Member: total
   cdr << ros_message.total;
   return true;
@@ -45,8 +45,8 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   person_msgs::msg::Person & ros_message)
 {
-  // Member: value
-  cdr >> ros_message.value;
+  // Member: safety
+  cdr >> ros_message.safety;
 
   // Member: total
   cdr >> ros_message.total;
@@ -67,9 +67,9 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: value
+  // Member: safety
   {
-    size_t item_size = sizeof(ros_message.value);
+    size_t item_size = sizeof(ros_message.safety);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -98,7 +98,7 @@ max_serialized_size_Person(
   (void)full_bounded;
 
 
-  // Member: value
+  // Member: safety
   {
     size_t array_size = 1;
 

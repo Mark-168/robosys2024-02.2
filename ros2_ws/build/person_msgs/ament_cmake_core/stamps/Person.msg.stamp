@@ -1,2 +1,0 @@
-uint8 safety
-uint8 total

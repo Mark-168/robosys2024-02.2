@@ -49,9 +49,9 @@ static bool _Query_Request__cdr_serialize(
     return false;
   }
   const _Query_Request__ros_msg_type * ros_message = static_cast<const _Query_Request__ros_msg_type *>(untyped_ros_message);
-  // Field name: value
+  // Field name: safety
   {
-    cdr << ros_message->value;
+    cdr << ros_message->safety;
   }
 
   return true;
@@ -66,9 +66,9 @@ static bool _Query_Request__cdr_deserialize(
     return false;
   }
   _Query_Request__ros_msg_type * ros_message = static_cast<_Query_Request__ros_msg_type *>(untyped_ros_message);
-  // Field name: value
+  // Field name: safety
   {
-    cdr >> ros_message->value;
+    cdr >> ros_message->safety;
   }
 
   return true;
@@ -88,9 +88,9 @@ size_t get_serialized_size_person_msgs__srv__Query_Request(
   (void)padding;
   (void)wchar_size;
 
-  // field.name value
+  // field.name safety
   {
-    size_t item_size = sizeof(ros_message->value);
+    size_t item_size = sizeof(ros_message->safety);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -118,7 +118,7 @@ size_t max_serialized_size_person_msgs__srv__Query_Request(
   (void)wchar_size;
   (void)full_bounded;
 
-  // member: value
+  // member: safety
   {
     size_t array_size = 1;
 

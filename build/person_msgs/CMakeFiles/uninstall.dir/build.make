@@ -46,7 +46,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/koara/robosys2024-02.2/ros2_ws/src/person_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/koara/robosys2024-02.2/build/person_msgs
+CMAKE_BINARY_DIR = /home/koara/robosys2024-02.2/ros2_ws/build/person_msgs
 
 # Utility rule file for uninstall.
 
@@ -67,6 +67,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/koara/robosys2024-02.2/build/person_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/koara/robosys2024-02.2/ros2_ws/src/person_msgs /home/koara/robosys2024-02.2/ros2_ws/src/person_msgs /home/koara/robosys2024-02.2/build/person_msgs /home/koara/robosys2024-02.2/build/person_msgs /home/koara/robosys2024-02.2/build/person_msgs/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/koara/robosys2024-02.2/ros2_ws/build/person_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/koara/robosys2024-02.2/ros2_ws/src/person_msgs /home/koara/robosys2024-02.2/ros2_ws/src/person_msgs /home/koara/robosys2024-02.2/ros2_ws/build/person_msgs /home/koara/robosys2024-02.2/ros2_ws/build/person_msgs /home/koara/robosys2024-02.2/ros2_ws/build/person_msgs/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

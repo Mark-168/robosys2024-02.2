@@ -6,7 +6,7 @@
 module person_msgs {
   module msg {
     struct Person {
-      uint8 value;
+      uint8 safety;
 
       uint8 total;
     };

@@ -5,12 +5,12 @@ from std_msgs.msg import Int16
 
 class Listener(Node):
     def __init__(self):
-        super().__init__("listener")
+        super().__init__("test_listener")
         self.sub = self.create_subscription(Int16, "value",self.cb, 10)
 
 
     def cb(self, msg):
-        self.get_logger().info("count: %d" % msg.data) 
+        self.get_logger().info("count_total: %d" % msg.data) 
 
 
 def main():

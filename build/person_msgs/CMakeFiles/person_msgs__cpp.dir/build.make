@@ -46,7 +46,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/koara/robosys2024-02.2/ros2_ws/src/person_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/koara/robosys2024-02.2/build/person_msgs
+CMAKE_BINARY_DIR = /home/koara/robosys2024-02.2/ros2_ws/build/person_msgs
 
 # Utility rule file for person_msgs__cpp.
 
@@ -87,8 +87,8 @@ rosidl_generator_cpp/person_msgs/msg/person.hpp: /opt/ros/foxy/share/rosidl_gene
 rosidl_generator_cpp/person_msgs/msg/person.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__type_support.hpp.em
 rosidl_generator_cpp/person_msgs/msg/person.hpp: rosidl_adapter/person_msgs/msg/Person.idl
 rosidl_generator_cpp/person_msgs/msg/person.hpp: rosidl_adapter/person_msgs/srv/Query.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/koara/robosys2024-02.2/build/person_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/foxy/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/koara/robosys2024-02.2/build/person_msgs/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/koara/robosys2024-02.2/ros2_ws/build/person_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/foxy/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/koara/robosys2024-02.2/ros2_ws/build/person_msgs/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/person_msgs/msg/detail/person__builder.hpp: rosidl_generator_cpp/person_msgs/msg/person.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/person_msgs/msg/detail/person__builder.hpp
@@ -142,6 +142,6 @@ CMakeFiles/person_msgs__cpp.dir/clean:
 .PHONY : CMakeFiles/person_msgs__cpp.dir/clean
 
 CMakeFiles/person_msgs__cpp.dir/depend:
-	cd /home/koara/robosys2024-02.2/build/person_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/koara/robosys2024-02.2/ros2_ws/src/person_msgs /home/koara/robosys2024-02.2/ros2_ws/src/person_msgs /home/koara/robosys2024-02.2/build/person_msgs /home/koara/robosys2024-02.2/build/person_msgs /home/koara/robosys2024-02.2/build/person_msgs/CMakeFiles/person_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/koara/robosys2024-02.2/ros2_ws/build/person_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/koara/robosys2024-02.2/ros2_ws/src/person_msgs /home/koara/robosys2024-02.2/ros2_ws/src/person_msgs /home/koara/robosys2024-02.2/ros2_ws/build/person_msgs /home/koara/robosys2024-02.2/ros2_ws/build/person_msgs /home/koara/robosys2024-02.2/ros2_ws/build/person_msgs/CMakeFiles/person_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/person_msgs__cpp.dir/depend
 

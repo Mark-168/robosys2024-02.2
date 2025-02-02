@@ -33,14 +33,14 @@ void Person__rosidl_typesupport_introspection_c__Person_fini_function(void * mes
 
 static rosidl_typesupport_introspection_c__MessageMember Person__rosidl_typesupport_introspection_c__Person_message_member_array[2] = {
   {
-    "value",  // name
+    "safety",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(person_msgs__msg__Person, value),  // bytes offset in struct
+    offsetof(person_msgs__msg__Person, safety),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer

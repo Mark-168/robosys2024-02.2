@@ -20,15 +20,15 @@ namespace srv
 namespace builder
 {
 
-class Init_Query_Request_value
+class Init_Query_Request_safety
 {
 public:
-  Init_Query_Request_value()
+  Init_Query_Request_safety()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::person_msgs::srv::Query_Request value(::person_msgs::srv::Query_Request::_value_type arg)
+  ::person_msgs::srv::Query_Request safety(::person_msgs::srv::Query_Request::_safety_type arg)
   {
-    msg_.value = std::move(arg);
+    msg_.safety = std::move(arg);
     return std::move(msg_);
   }
 
@@ -47,7 +47,7 @@ template<>
 inline
 auto build<::person_msgs::srv::Query_Request>()
 {
-  return person_msgs::srv::builder::Init_Query_Request_value();
+  return person_msgs::srv::builder::Init_Query_Request_safety();
 }
 
 }  // namespace person_msgs

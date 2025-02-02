@@ -16,7 +16,7 @@ person_msgs__srv__Query_Request__init(person_msgs__srv__Query_Request * msg)
   if (!msg) {
     return false;
   }
-  // value
+  // safety
   return true;
 }
 
@@ -26,7 +26,7 @@ person_msgs__srv__Query_Request__fini(person_msgs__srv__Query_Request * msg)
   if (!msg) {
     return;
   }
-  // value
+  // safety
 }
 
 bool
@@ -35,8 +35,8 @@ person_msgs__srv__Query_Request__are_equal(const person_msgs__srv__Query_Request
   if (!lhs || !rhs) {
     return false;
   }
-  // value
-  if (lhs->value != rhs->value) {
+  // safety
+  if (lhs->safety != rhs->safety) {
     return false;
   }
   return true;
@@ -50,8 +50,8 @@ person_msgs__srv__Query_Request__copy(
   if (!input || !output) {
     return false;
   }
-  // value
-  output->value = input->value;
+  // safety
+  output->safety = input->safety;
   return true;
 }
 

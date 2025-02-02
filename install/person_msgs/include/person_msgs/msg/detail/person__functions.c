@@ -17,7 +17,7 @@ person_msgs__msg__Person__init(person_msgs__msg__Person * msg)
   if (!msg) {
     return false;
   }
-  // value
+  // safety
   // total
   return true;
 }
@@ -28,7 +28,7 @@ person_msgs__msg__Person__fini(person_msgs__msg__Person * msg)
   if (!msg) {
     return;
   }
-  // value
+  // safety
   // total
 }
 
@@ -38,8 +38,8 @@ person_msgs__msg__Person__are_equal(const person_msgs__msg__Person * lhs, const 
   if (!lhs || !rhs) {
     return false;
   }
-  // value
-  if (lhs->value != rhs->value) {
+  // safety
+  if (lhs->safety != rhs->safety) {
     return false;
   }
   // total
@@ -57,8 +57,8 @@ person_msgs__msg__Person__copy(
   if (!input || !output) {
     return false;
   }
-  // value
-  output->value = input->value;
+  // safety
+  output->safety = input->safety;
   // total
   output->total = input->total;
   return true;
